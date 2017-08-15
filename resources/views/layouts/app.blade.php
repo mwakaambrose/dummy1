@@ -9,7 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{-- {{ env('APP_NAME', 'ambrose.pro') }} --}} ambrose.pro</title>
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel='stylesheet' type='text/css' />
 </head>
 <body>
@@ -42,11 +42,12 @@
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li><a href="{{ route('login') }}">Clients Login</a></li>
-                            <li><a href="{{ route('register') }}">Clients Register</a></li>
+                            {{-- <li><a href="{{ route('login') }}">Clients Login</a></li> --}}
+                            {{-- <li><a href="{{ route('register') }}">Clients Register</a></li> --}}
                             <li><a href="/my-work">My Work</a></li>
-                            <li><a href="/how-i-work">How I Work</a></li>
-                            <li><a href="/blog"><strong>Blog</strong></a></li>
+                            <li><a href="/more-information"><strong>Learn More</strong></a></li>
+                            <li><a href="/pricing"><strong>Pricing</strong></a></li>
+                            <li><a href="/tutorials"><strong>Tutorials</strong></a></li>
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -75,37 +76,8 @@
 
         @yield('content')
 
-
-    {{-- <div class="footer">
-        <div class="container">
-            <div class="col-md-4 contact">
-                <h3><strong>Quick About</strong></h3>
-                <p>Ambrose.pro is an engineering division of TrustFinity. Its a division that deals with
-                the developement, deployment and maintanance of cloud based SaaS products.</p>
-                <p>Am here to merge your business with
-                    technology.</p>
-            </div>
-            <div class="col-md-4 contact">
-                <h3><strong>Company</strong></h3>
-
-            </div>
-            <div class="col-md-2 contact">
-                <h3><strong>Services</strong></h3>
-
-            </div>
-            <div class="col-md-2 contact">
-                <h3><strong>Portfolio</strong></h3>
-
-            </div>
-        </div>
-        <div class="container">
-            <div class="col-md-4">
-                <p>&copy 2017 ambrose.pro a <strong>TrustFinity </strong>Engineer</p>
-            </div>
-        </div>
-    </div> --}}
     </div>
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>

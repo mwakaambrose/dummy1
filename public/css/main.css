@@ -3052,12 +3052,14 @@ margin: 0;
 /* Footer */
 
 #footer {
-text-align: center;
-background: #f6755e;
-color: #fcdcd6
+	text-align: center;
+	background: #f6755e;
+	color: #fcdcd6
 }
 #footer a {
-color: #c8e7f0;
-text-decoration: none;
+	color: #c8e7f0;
+	text-decoration: none;
 }
-	
+.languages {
+	margin: 0 auto;
+}

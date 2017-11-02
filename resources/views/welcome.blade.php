@@ -2,7 +2,6 @@
 @section('body-class', 'welcome')
 @section('content')
 
-<!-- Banner -->
 <section id="banner">
     <div class="content">
         <h1>Personal and Business Cloud</h1>
@@ -39,7 +38,12 @@
     </div>
 </section>
 
-<!-- Two -->
+<section id="three" class="wrapper">
+    <div class="inner flex flex-3">
+        <img class="languages" src="images/languages.png" alt="Php Java Node Java">
+    </div>
+</section>
+
 <section id="two" class="wrapper style1 special">
     <div class="inner">
         <h2>Launch your business in the cloud today</h2>
@@ -52,14 +56,34 @@
                 <cite class="company">CTO, TrustFinity</cite>
             </footer>
         </figure>
-        <br>
+    </div>
+</section>
+
+<section id="three" class="wrapper">
+    <div class="inner">
+        <div class="flex flex-3">
+            <p class="text-center">
+                Our approach is simple, we refuse to compromise when it comes to quality. We set our standards high and then we aim to surpass them. We do this by investing in the continuous improvement of our products and services, cutting edge technologies and by working with a team that is knowledgeable and dedicated to ensuring that our clients are satisfied.
+            </p>
+        </div>
+        <div class="flex flex-3">
+            <form action="/send-email" method="POST">
+                {{ csrf_field() }}
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Leave you email to schedule a chat...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="send">Send</button>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section id="two" class="wrapper style1 special">
+    <div class="inner">
         <p>&copy 2017 ambrose.pro  TrustFinity Developer</p>
     </div>
 </section>
 
-<!-- Three -->
-{{-- <section id="three" class="wrapper">
-    <div class="inner flex flex-3">
-    </div>
-</section> --}}
 @endsection

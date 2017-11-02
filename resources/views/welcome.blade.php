@@ -70,7 +70,8 @@
             <form action="/send-email" method="POST">
                 {{ csrf_field() }}
                 <div class="input-group">
-                    <input type="email" class="form-control" placeholder="Leave you email to schedule a chat...">
+                    <input type="email" required name="email_to" 
+                        class="form-control" placeholder="Leave you email to schedule a chat...">
                     <span class="input-group-btn">
                         <button class="btn btn-default" type="send">Send</button>
                     </span>

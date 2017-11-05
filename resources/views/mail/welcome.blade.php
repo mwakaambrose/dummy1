@@ -1,236 +1,348 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Go Ping Email</title>
-    <!-- Designed by https://github.com/kaytcat -->
-    <!-- Header image designed by Freepik.com -->
-
-    <style type="text/css">
-    /* Take care of image borders and formatting */
-
-    img { max-width: 600px; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;}
-    a img { border: none; }
-    table { border-collapse: collapse !important; }
-    #outlook a { padding:0; }
-    .ReadMsgBody { width: 100%; }
-    .ExternalClass {width:100%;}
-    .backgroundTable {margin:0 auto; padding:0; width:100%;!important;}
-    table td {border-collapse: collapse;}
-    .ExternalClass * {line-height: 115%;}
-
-
-    /* General styling */
-
-    td {
-      font-family: Arial, sans-serif;
-      color: #5e5e5e;
-      font-size: 16px;
-      text-align: left;
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <title>[SUBJECT]</title>
+      <style type="text/css">
+      body {
+       padding-top: 0 !important;
+       padding-bottom: 0 !important;
+       padding-top: 0 !important;
+       padding-bottom: 0 !important;
+       margin:0 !important;
+       width: 100% !important;
+       -webkit-text-size-adjust: 100% !important;
+       -ms-text-size-adjust: 100% !important;
+       -webkit-font-smoothing: antialiased !important;
+     }
+     .tableContent img {
+       border: 0 !important;
+       display: block !important;
+       outline: none !important;
+     }
+     a{
+      color:#382F2E;
     }
 
-    body {
-      -webkit-font-smoothing:antialiased;
-      -webkit-text-size-adjust:none;
-      width: 100%;
-      height: 100%;
-      color: #5e5e5e;
-      font-weight: 400;
-      font-size: 16px;
+    p, h1{
+      color:#382F2E;
+      margin:0;
+    }
+ p{
+      text-align:left;
+      color:#999999;
+      font-size:14px;
+      font-weight:normal;
+      line-height:19px;
     }
 
-
-    h1 {
-      margin: 10px 0;
+    a.link1{
+      color:#382F2E;
+    }
+    a.link2{
+      font-size:16px;
+      text-decoration:none;
+      color:#ffffff;
     }
 
-    a {
-      color: #2b934f;
-      text-decoration: none;
+    h2{
+      text-align:left;
+       color:#222222; 
+       font-size:19px;
+      font-weight:normal;
+    }
+    div,p,ul,h1{
+      margin:0;
     }
 
-
-    .body-padding {
-      padding: 0 75px;
+    .bgBody{
+      background: #ffffff;
     }
-
-
-    .force-full-width {
-      width: 100% !important;
+    .bgItem{
+      background: #ffffff;
     }
-
-    .icons {
-      text-align: right;
-      padding-right: 30px;
+    
+@media only screen and (max-width:480px)
+        
+{
+        
+table[class="MainContainer"], td[class="cell"] 
+    {
+        width: 100% !important;
+        height:auto !important; 
     }
-
-    .logo {
-      text-align: left;
-      padding-left: 30px;
+td[class="specbundle"] 
+    {
+        width:100% !important;
+        float:left !important;
+        font-size:13px !important;
+        line-height:17px !important;
+        display:block !important;
+        padding-bottom:15px !important;
     }
-
-    .computer-image {
-      padding-left: 30px;
+        
+td[class="spechide"] 
+    {
+        display:none !important;
     }
-
-    .header-text {
-      text-align: left;
-      padding-right: 30px;
-      padding-left: 20px;
+        img[class="banner"] 
+    {
+              width: 100% !important;
+              height: auto !important;
     }
-
-    .header {
-      color: #232925;
-      font-size: 24px;
+        td[class="left_pad"] 
+    {
+            padding-left:15px !important;
+            padding-right:15px !important;
     }
+         
+}
+    
+@media only screen and (max-width:540px) 
 
-
+{
+        
+table[class="MainContainer"], td[class="cell"] 
+    {
+        width: 100% !important;
+        height:auto !important; 
+    }
+td[class="specbundle"] 
+    {
+        width:100% !important;
+        float:left !important;
+        font-size:13px !important;
+        line-height:17px !important;
+        display:block !important;
+        padding-bottom:15px !important;
+    }
+        
+td[class="spechide"] 
+    {
+        display:none !important;
+    }
+        img[class="banner"] 
+    {
+              width: 100% !important;
+              height: auto !important;
+    }
+    .font {
+        font-size:18px !important;
+        line-height:22px !important;
+        
+        }
+        .font1 {
+        font-size:18px !important;
+        line-height:22px !important;
+        
+        }
+}
 
     </style>
-
-    <style type="text/css" media="screen">
-        @media screen {
-          @import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
-          /* Thanks Outlook 2013! */
-          * {
-            font-family: 'PT Sans', 'Helvetica Neue', 'Arial', 'sans-serif' !important;
-          }
-        }
-    </style>
-
-    <style type="text/css" media="only screen and (max-width: 599px)">
-      /* Mobile styles */
-      @media only screen and (max-width: 599px) {
-
-        table[class*="w320"] {
-          width: 320px !important;
-        }
-
-        td[class*="icons"] {
-          display: block !important;
-          text-align: center !important;
-          padding: 0 !important;
-        }
-
-        td[class*="logo"] {
-          display: block !important;
-          text-align: center !important;
-          padding: 0 !important;
-        }
-
-        td[class*="computer-image"] {
-          display: block !important;
-          width: 230px !important;
-          padding: 0 45px !important;
-          border-bottom: 1px solid #e3e3e3 !important;
-        }
-
-
-        td[class*="header-text"] {
-          display: block !important;
-          text-align: center !important;
-          padding: 0 25px!important;
-          padding-bottom: 25px !important;
-        }
-
-        *[class*="mobile-hide"] {
-          display: none !important;
-          width: 0 !important;
-          height: 0 !important;
-          line-height: 0 !important;
-          font-size: 0 !important;
-        }
-
-
-      }
-    </style>
+<script type="colorScheme" class="swatch active">
+{
+    "name":"Default",
+    "bgBody":"ffffff",
+    "link":"382F2E",
+    "color":"999999",
+    "bgItem":"ffffff",
+    "title":"222222"
+}
+</script>
   </head>
-  <body  offset="0" class="body" style="padding:0; margin:0; display:block; background:#ffffff; -webkit-text-size-adjust:none" bgcolor="#ffffff">
-  <table align="center" cellpadding="0" cellspacing="0" width="100%" height="100%">
+  <body paddingwidth="0" paddingheight="0"   style="padding-top: 0; padding-bottom: 0; padding-top: 0; padding-bottom: 0; background-repeat: repeat; width: 100% !important; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: antialiased;" offset="0" toppadding="0" leftpadding="0">
+    <table bgcolor="#ffffff" width="100%" border="0" cellspacing="0" cellpadding="0" class="tableContent" align="center"  style='font-family:Helvetica, Arial,serif;'>
+  <tbody>
     <tr>
-      <td align="center" valign="top" style="background-color:#ffffff" width="100%">
+      <td><table width="600" border="0" cellspacing="0" cellpadding="0" align="center" bgcolor="#ffffff" class="MainContainer">
+  <tbody>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="top" width="40">&nbsp;</td>
+      <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+  <!-- =============================== Header ====================================== -->   
+    <tr>
+        <td height='75' class="spechide"></td>
+        
+        <!-- =============================== Body ====================================== -->
+    </tr>
+    <tr>
+      <td class='movableContentContainer ' valign='top'>
+        <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td height="35"></td>
+    </tr>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="top" align="center" class="specbundle"><div class="contentEditableContainer contentTextEditable">
+                                <div class="contentEditable">
+                                  <p style='text-align:center;margin:0;font-family:Georgia,Time,sans-serif;font-size:26px;color:#222222;'><span class="specbundle2"><span class="font1">Welcome to&nbsp;</span></span></p>
+                                </div>
+                              </div></td>
+      <td valign="top" class="specbundle"><div class="contentEditableContainer contentTextEditable">
+                                <div class="contentEditable">
+                                  <p style='text-align:center;margin:0;font-family:Georgia,Time,sans-serif;font-size:26px;color:#DC2828;'><span class="font">AMBROSE.PRO managed cloud</span> </p>
+                                </div>
+                              </div></td>
+    </tr>
+  </tbody>
+</table>
+</td>
+    </tr>
+  </tbody>
+</table>
+        </div>
+        <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+                          <tr>
+                            <td valign='top' align='center'>
+                              <div class="contentEditableContainer contentImageEditable">
+                                <div class="contentEditable">
+                                  <img src="images/line.png" width='251' height='43' alt='' data-default="placeholder" data-max-width="560">
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+        </div>
+        <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+              <tr><td height='55'></td></tr>
+              <tr>
+                <td align='left'>
+                  <div class="contentEditableContainer contentTextEditable">
+                    <div class="contentEditable" align='center'>
+                      <h2 >Mwaka here,</h2>
+                    </div>
+                  </div>
+                </td>
+              </tr>
 
-      <center>
-        <table cellspacing="0" cellpadding="0" width="600" class="w320">
-          <tr>
-            <td align="center" valign="top">
+              <tr><td height='15'> </td></tr>
 
-              <table class="force-full-width" cellspacing="0" cellpadding="0" bgcolor="#232925">
-                <tr>
-                  <td style="background-color:#232925" class="logo">
-                    <br>
-                    <a href="#"><img src="https://www.filepicker.io/api/file/VbAkyOP8RbGOZKUELbAX" alt="Logo"></a>
-                  </td>
-                </tr>
-              </table>
+              <tr>
+                <td align='left'>
+                  <div class="contentEditableContainer contentTextEditable">
+                    <div class="contentEditable" align='center'>
+                      <p >
+                        Thanks for taking your time to contact us! You’re all set up, Lets use this email thread to talk more. Feel free though to use any other channels of communication that is faster for you. Excited to here from you. 
+                        <br>
+                        <br>
+                        Cheers,
+                        <br>
+                        <span style='color:#222222;'>Mwaka Ambrose</span>
+                      </p>
+                    </div>
+                  </div>
+                </td>
+              </tr>
 
-              <table cellspacing="0" cellpadding="0" class="force-full-width" bgcolor="#232925">
-                <tr>
-                  <td class="computer-image">
-                    <br>
-                    <br class="mobile-hide" />
-                    <img style="display:block;" width="224" height="213" src="https://www.filepicker.io/api/file/CoMxXSlVRDuRQWNwnMzV" alt="hello">
-                  </td>
-                  <td style="color: #ffffff;" class="header-text">
-                    <br>
-                    <br>
-                    <span style="font-size: 24px;">Welcome!</span><br><br>
-                    <br>
-                    <br>
-                      <div><!--[if mso]>
-                        <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:40px;v-text-anchor:middle;width:200px;" stroke="f" fillcolor="#2b934f">
-                          <w:anchorlock/>
-                          <center>
-                        <![endif]-->
-                            <a href="http://"
-                        style="background-color:#2b934f;color:#ffffff;display:inline-block;font-family:Helvetcia, sans-serif;font-size:16px;font-weight:light;line-height:40px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;">Review Account Settings</a>
-                          <!--[if mso]>
-                            </center>
-                          </v:rect>
-                        <![endif]-->
-                      </div>
-                      <br>
-                  </td>
-                </tr>
-              </table>
+              <tr><td height='55'></td></tr>
 
-
-              <table class="force-full-width" cellspacing="0" cellpadding="30" bgcolor="#ebebeb">
-                <tr>
-                  <td>
-                    <table cellspacing="0" cellpadding="0" class="force-full-width">
-                      <tr>
-                        <td>
-                          Hi,<br>
-                          <br>
-                          My name is Ambrose, and I would like to thank you for taking your time to contact us. Lets use this email thread to talk more. Excited to here from you.</a><br><br>
-                          Sincerely,<br><br>
-                          ambrose.pro
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-
-
-              <table class="force-full-width" cellspacing="0" cellpadding="20" bgcolor="#2b934f">
-                <tr>
-                  <td style="background-color:#2b934f; color:#ffffff; font-size: 14px; text-align: center;">
-                    © 2017 All Rights Reserved
-                  </td>
-                </tr>
-              </table>
-
-
-            </td>
-          </tr>
-        </table>
-
-      </center>
+              <tr>
+                <td align='center'>
+                  <table>
+                    <tr>
+                      <td align='center' bgcolor='#1A54BA' style='background:#DC2828; padding:15px 18px;-webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px;'>
+                        <div class="contentEditableContainer contentTextEditable">
+                          <div class="contentEditable" align='center'>
+                            <a target='_blank' href="http://ambrose.pro" class='link2' style='color:#ffffff;'>Back to ambrose.pro</a>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr><td height='20'></td></tr>
+            </table>
+        </div>
+        <div class="movableContent" style="border: 0px; padding-top: 0px; position: relative;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td height='65'>
+    </tr>
+    <tr>
+      <td  style='border-bottom:1px solid #DDDDDD;'></td>
+    </tr>
+    <tr><td height='25'></td></tr>
+    <tr>
+      <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="top" class="specbundle"><div class="contentEditableContainer contentTextEditable">
+              <div class="contentEditable" align='center'>
+                <p  style='text-align:left;font-size:14px;font-weight:normal;line-height:20px;'>
+                  <span style='font-weight:bold;'>Mwaka Ambrose</span>
+                  <br>
+                    Kampala, Uganda
+                  <br>
+                  <a target='_blank' class='link1' class='color:#382F2E;' href="http://about.me/mwakaambrose">About Me.</a>
+                  <p style='text-align:left;font-size:14px;font-weight:normal;line-height:20px;'>Whatsapp | +256-793-270-999</p>
+                </p>
+              </div>
+            </div></td>
+      <td valign="top" width="30" class="specbundle">&nbsp;</td>
+      <td valign="top" class="specbundle"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign='top' width='52'>
+        <div class="contentEditableContainer contentFacebookEditable">
+          <div class="contentEditable">
+            <a target='_blank' href="http://facebook.com/sxambrose"><img src="images/facebook.png" width='52' height='53' alt='facebook icon' data-default="placeholder" data-max-width="52" data-customIcon="true"></a>
+          </div>
+        </div>
+      </td>
+      <td valign="top" width="16">&nbsp;</td>
+      <td valign='top' width='52'>
+        <div class="contentEditableContainer contentTwitterEditable">
+          <div class="contentEditable">
+            <a target='_blank' href="http://twitter.com/AmbroseMwaka">
+                <img src="images/twitter.png" width='52' height='53' alt='twitter icon' data-default="placeholder" data-max-width="52" data-customIcon="true">
+            </a>
+          </div>
+        </div>
       </td>
     </tr>
-  </table>
+  </tbody>
+</table>
+</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+    </tr>
+    <tr><td height='88'></td></tr>
+  </tbody>
+</table>
+</div>
+        
+        <!-- =============================== footer ====================================== -->
+      
+      </td>
+    </tr>
+  </tbody>
+</table>
+</td>
+      <td valign="top" width="40">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+        </tr>
+        </tbody>
+    </table>
   </body>
 </html>
